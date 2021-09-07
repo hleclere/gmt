@@ -1,2 +1,5 @@
 [core]
     analytics = false
+    remote = upstream
+['remote "upstream"']
+    url = https://dagshub.com/GenericMappingTools/gmt.dvc
