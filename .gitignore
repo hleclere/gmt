@@ -13,4 +13,5 @@ doc/examples/**/*.mp4
 doc/examples/**/*.png
 doc/examples/**/*.gif
 
+# Data files (tracked using dvc)
 test/**/*.ps
