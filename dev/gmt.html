@@ -5,7 +5,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>gmt &mdash; GMT 6.3.0 documentation</title>
+  <title>gmt &mdash; GMT 6.4.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
@@ -49,7 +49,7 @@
             <a href="index.html" class="icon icon-home"> GMT
           </a>
               <div class="version">
-                6.3
+                6.4
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -226,7 +226,11 @@ when building the shared library means <strong>gmt</strong> can list available m
 </dd>
 <dt><strong>--show-dataserver</strong></dt><dd><p>Show URL of the remote GMT data server.</p>
 </dd>
+<dt><strong>--show-dcw</strong></dt><dd><p>Show the DCW data version used.</p>
+</dd>
 <dt><strong>--show-doi</strong></dt><dd><p>Show the DOI of the current release.</p>
+</dd>
+<dt><strong>--show-gshhg</strong></dt><dd><p>Show the GSHHG data version used.</p>
 </dd>
 <dt><strong>--show-modules</strong></dt><dd><p>List modern module names on stdout and exit.</p>
 </dd>
@@ -834,9 +838,9 @@ geosynchronous orbit.</p></li>
 <blockquote id="js-full">
 <div><dl class="simple">
 <dt><strong>-Js</strong>|<strong>S</strong><em>lon0/lat0</em>[<em>/horizon</em>]<em>/</em><em>scale</em>|<em>width</em> (General Stereographic <strong>[C]</strong>).</dt><dd><p><em>lon0/lat0</em> specifies the projection center. <em>horizon</em> specifies the max distance from projection center (in
-degrees, &lt; 180, default 90). Give <em>scale</em> (with <strong>-Js</strong>; as <strong>1:</strong><em>xxxx</em> (true at pole) or <em>lat0</em>/<strong>1:</strong><em>xxxx</em> (true at standard parallel <em>lat</em>) or <em>radius/lat</em> (<em>radius</em> in <a class="reference internal" href="cookbook/features.html#plt-units"><span class="std std-ref">plot-units</span></a> from origin
+degrees, &lt; 180, default 90). Give <em>scale</em> (with <strong>-Js</strong>; as <strong>1:</strong><em>xxxx</em> (true at pole) or <em>lat</em>/<strong>1:</strong><em>xxxx</em> (true at standard parallel <em>lat</em> and requires <em>lat0</em> = ±90) or <em>radius/lat</em> (<em>radius</em> in <a class="reference internal" href="cookbook/features.html#plt-units"><span class="std std-ref">plot-units</span></a> from origin
 to the oblique latitude <em>lat</em>). Note if <strong>1:</strong><em>xxxx</em> is used then to specify <em>horizon</em> you must also specify
-the <em>lat</em> as +-90 to avoid ambiguity.) or width (with <strong>-JS</strong>; in <a class="reference internal" href="cookbook/features.html#plt-units"><span class="std std-ref">plot-units</span></a>).</p>
+the <em>lat</em> as ±90 to avoid ambiguity.) or width (with <strong>-JS</strong>; in <a class="reference internal" href="cookbook/features.html#plt-units"><span class="std std-ref">plot-units</span></a>).</p>
 </dd>
 </dl>
 <p><strong>MISCELLANEOUS PROJECTIONS:</strong></p>
@@ -1971,7 +1975,7 @@ GMT documentation site <a class="reference external" href="https://docs.generic-
 
   <div role="contentinfo">
     <p>&#169; Copyright 2021, The GMT Team..
-      <span class="lastupdated">Last updated on Nov 18, 2021.
+      <span class="lastupdated">Last updated on Nov 23, 2021.
       </span></p>
   </div>
 
